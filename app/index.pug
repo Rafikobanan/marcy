@@ -1,0 +1,53 @@
+extends ./pug/layout/layout.pug
+block vars
+	-var pageTitle = 'Marcy';
+	-var headerName = 'Story';
+
+block content
+	.wrapper
+		.nullam
+			.container
+				.nullam__inner
+					.nullam__first-column
+						.section-title
+							.section-title__title Travel
+							.section-title__name Nullam id dolor id nibh ultricies vehicula ut id elit. 
+						.nullam__text Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.<br><br> Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+						a.btn.nullam__btn Full Story
+					.nullam__second-column
+						.nullam-imgs
+							.img-stroke.ibg.nullam-imgs__left
+								img(src="img/index-nullam-2.jpg", alt="")
+							.img-stroke.ibg.nullam-imgs__right
+								img(src="img/index-nullam-1.jpg", alt="")
+
+		.donec
+			.container
+				.donec__inner
+					.section-title.donec__section-title
+						.section-title__title Travel
+						.section-title__name Donec sed odio dui. Cras mattis consectetur<br> purus sit amet fermentum. 
+					.img-stroke.ibg.donec__img
+						img(src="img/index-donec-1.jpg", alt="")
+					.donec__text Donec aredsed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla.<br><br>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. 
+					a.btn.donec__btn Full Story
+
+	.video
+		video(src="video/index-video-1.mp4").video__video
+		img.video__btn(src="img/index-video-play.png", alt="")
+	
+	.quote
+		.container
+			.quote__row
+				.img-stroke.ibg.quote__img
+					img(src="img/index-quote-1.jpg", alt="")
+				.section-title.quote__section-title
+					.section-title__title Quote
+					.section-title__name Nullam id dolor id nibh ultricies vehicula elit. 
+			.quote__quote-column
+				.quote-block
+					.quote-block__text “Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor”
+					.quote-block__info
+						.quote-block__author VEN diesel 
+						.quote-block__date 1962-2006
+					a.btn.quote-block__btn Full Story

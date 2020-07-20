@@ -1,0 +1,2 @@
+$(document).ready(function(){!function(){let e=document.querySelectorAll(".ibg");for(var t=0;t<e.length;t++)e[t].querySelector("img")&&(e[t].style.backgroundImage="url("+e[t].querySelector("img").getAttribute("src")+")")}(),$(".header__hamburger").click(function(){$(".header-nav").toggle(300)}),$(".video__btn").click(function(){let e=document.querySelector(".video__video");e.play(),$(this).hide(),$(e).attr("controls","controls")})});
+//# sourceMappingURL=main-min.js.map

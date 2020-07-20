@@ -1,0 +1,167 @@
+.wrapper
+	+bg('../img/index-background-1.jpg')
+.nullam
+	min-height: 830px
+	padding: 0 0 200px
+	overflow-x: hidden
+	&__inner
+		display: flex
+		justify-content: flex-start
+	&__first-column
+		flex: 1 0 458px
+	&__text
+		margin-top: 63px
+		margin-bottom: 68px
+
+.nullam-imgs
+	position: relative
+	&__left
+		position: absolute
+		top: 59px
+		left: 0
+		width: 373px
+		padding-bottom: 22%
+		z-index: 2
+	&__right
+		margin-left: 132px
+		margin-top: 40px
+		width: 860px
+		padding-bottom: 55%
+
+@media (max-width: 991px)
+	.nullam
+		&__inner
+			display: block
+		&__first-column
+			margin-bottom: 40px
+	.nullam-imgs
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__left-img
+		width: 100%
+		position: static
+		margin-bottom: 10px
+	&__right-img
+		width: 100%
+		margin: 0
+
+.donec
+	min-height: 1370px
+	&__section-title
+		margin-bottom: 67px
+	&__inner
+		padding: 0 150px
+	&__section-title
+		text-align: center
+	&__img
+		margin-bottom: 89px
+		padding-bottom: 62%
+	&__text
+		padding: 0 44px
+		margin-bottom: 41px
+	&__btn
+		margin-left: 39px
+
+@media (max-width: 991px)
+	.donec
+		&__inner
+			padding: 0
+
+@media (max-width: 575px)
+	.donec
+		padding-bottom: 40px
+		&__text
+			padding: 0
+		&__btn
+			margin: 0
+
+.video
+	height: 506px
+	position: relative
+	&__video
+		height: 100%
+		width: 100%
+		object-fit: cover
+	&__btn
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		cursor: pointer
+	
+.quote
+	min-height: 841px
+	padding: 135px 0 98px
+	+bg('../img/index-background-2.jpg')
+	&__row
+		display: flex
+		padding-left: 98px
+	&__img
+		max-width: 429px
+		flex: 1 0 429px
+		padding-bottom: 25%
+	&__section-title
+		margin-left: 52px
+		padding-top: 31px
+		flex: 0 1 375px
+	&__quote-column
+		max-width: $column * 8
+		padding: 0 5px
+		flex: 0 0 $column * 8
+		margin-left: $column * 3
+
+.quote-block
+	padding: 64px 75px 65px 103px
+	box-shadow: 0 15px 65px rgba(15, 16, 16, 0.15)
+	transform: translateY(-62px)
+	background-color: #ffffff
+	&__info
+		opacity: 0.8
+		font-family: Poppins
+		font-size: 14px
+		font-weight: 500
+		text-transform: uppercase
+		letter-spacing: 2.8px
+		display: flex
+		justify-content: flex-start
+	&__text
+		font-style: italic
+		font-size: 26px
+		line-height: 46px
+		margin-bottom: 10px
+	&__date
+		color: #7a7b7c
+	&__author
+		margin-right: 17px
+	&__btn
+		position: absolute
+		bottom: 0
+		left: 53%
+		transform: translate(-50%, 50%)
+		&:hover
+			transform: scale(1.1) translate(-50%, 50%)
+
+@media (max-width: 991px)
+	.quote
+		&__row
+			margin-bottom: 30px
+			display: block
+			padding: 0
+		&__img
+			max-width: 100%
+			flex: 1 1 100%
+		&__section-title
+			margin-left: 0
+		&__quote-column
+			flex: 1 1 100%
+			max-width: 100%
+			margin: 0
+			padding: 0
+	.quote-block
+		transform: none
+
+@media (max-width: 576px)
+	.quote-block
+		padding-left: 30px
+		padding-right: 30px
